@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SafarShala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Safar<span class="mark">Shala</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="international.html">International</a>
+      <a href="treks.html">Trekking Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Contact</span>
+    <h1>Questions, custom trips, or just curious — write to us.</h1>
+    <p class="lede">For a full booking with pricing, use the Booking page instead — this is for general questions and custom destination requests.</p>
+  </div>
+</section>
+
+<section class="section contact-page-section">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h2>Reach us directly</h2>
+      <div class="info-row">
+        <span class="info-label">Email</span>
+        <a href="mailto:astromeda13@gmail.com" class="info-value">astromeda13@gmail.com</a>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Response time</span>
+        <span class="info-value">Usually within 48 hours</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">For bookings</span>
+        <a href="booking.html" class="info-value">Use the Booking page →</a>
+      </div>
+
+      <div class="stamp-block">
+        <span class="stamp">Handwritten replies, not bots</span>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal">
+      <form class="contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="field">
+          <label for="cName">Full name</label>
+          <input type="text" id="cName" required>
+        </div>
+        <div class="field">
+          <label for="cEmailOrPhone">Email or phone</label>
+          <input type="text" id="cEmailOrPhone" required>
+        </div>
+        <div class="field">
+          <label for="cMessage">Your message</label>
+          <textarea id="cMessage" rows="5" placeholder="Tell us what you're looking for — a custom destination, a question about a route, anything." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Safar<span class="mark">Shala</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul><li><a href="mailto:astromeda13@gmail.com?subject=Travel Inquiry"> astromeda13@gmail.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 SafarShala. All routes walked in-house.</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("htqfJ7pvbzpxEVkVw");
+
+function handleContactSubmit(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("cName").value;
+    const contact = document.getElementById("cEmailOrPhone").value;
+    const message = document.getElementById("cMessage").value;
+
+    emailjs.send(
+        "service_SafarShala",
+        "template_l7g9pmj",
+        {
+            name: name,
+            contact: contact,
+            message: message
+        }
+    )
+    .then(function() {
+        alert("✅ Message sent successfully!");
+        document.querySelector(".contact-form").reset();
+    })
+    .catch(function(error) {
+        alert("❌ Failed to send message.");
+        console.error(error);
+    });
+}
+</script>
+</body>
+</html>

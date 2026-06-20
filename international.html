@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Packages — Nostalgia Treks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="international.html" class="active">International</a>
+      <a href="treks.html">Trekking Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">International Packages</span>
+    <h1>Beyond India, arranged on request.</h1>
+    <p class="lede">Our heart is in the Himalayas, but we'll plan your stay, meals and route anywhere in the world. Tell us where, and we'll build the package.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">— SAMPLE DESTINATIONS</span>
+    <h2 style="font-size: clamp(26px, 3.6vw, 38px);">Placeholder listings — swap in your real destinations &amp; prices.</h2>
+  </div>
+
+  <div class="card-grid">
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600&q=80" alt="Placeholder international destination" loading="lazy">
+        <span class="price-stamp">₹—</span>
+      </div>
+      <div class="card-body">
+        <h3>Nepal Himalaya Crossing</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'nepal-himalaya', 'Nepal Himalaya Crossing', 0, 'International')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1480497490787-505ec076689f?w=600&q=80" alt="Placeholder international destination" loading="lazy">
+        <span class="price-stamp">₹—</span>
+      </div>
+      <div class="card-body">
+        <h3>Swiss Alpine Trail</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'swiss-alpine', 'Swiss Alpine Trail', 0, 'International')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Placeholder international destination" loading="lazy">
+        <span class="price-stamp">₹—</span>
+      </div>
+      <div class="card-body">
+        <h3>Bhutan Monastery Trek</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'bhutan-monastery', 'Bhutan Monastery Trek', 0, 'International')">Select This Place</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="not-listed reveal">
+    <h3>Don't see where you want to go?</h3>
+    <p>We arrange custom international trips on request — tell us your destination on the contact page and we'll quote it.</p>
+    <a href="contact.html" class="btn btn-outline">Request a Custom Destination →</a>
+  </div>
+
+  <div class="floating-total" id="floatingTotal">
+    <span class="ft-label">Your Trip So Far</span>
+    <span class="ft-amount" id="ftAmount">₹0</span>
+    <a href="booking.html" class="btn btn-primary ft-btn">Review &amp; Book →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul><li><a href="mailto:astromeda13@gmail.com">astromeda13@gmail.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Nostalgia Treks. All routes walked in-house.</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/packages.js"></script>
+</body>
+</html>

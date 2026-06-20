@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domestic Packages — Nostalgia Treks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="domestic.html" class="active">Domestic</a>
+      <a href="international.html">International</a>
+      <a href="treks.html">Trekking Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Domestic Packages</span>
+    <h1>Every corner of India, planned end to end.</h1>
+    <p class="lede">Hotel stay, breakfast, lunch and dinner — included in every package below. Select the places you want, and your total updates as you go.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">— ALL DOMESTIC PACKAGES</span>
+    <h2 style="font-size: clamp(26px, 3.6vw, 38px);">Placeholder listings — swap in your real places, photos &amp; prices.</h2>
+  </div>
+
+  <div class="card-grid" id="packageGrid">
+    <!-- Each card below is a placeholder. Duplicate the <article> block to add more.
+         IMPORTANT: give each card a unique id in the onclick call, and set the real price. -->
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp" id="price-d1">₹4500</span>
+      </div>
+      <div class="card-body">
+        <h3>Manali &amp; Solang Valley</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'manali-solang', 'Manali & Solang Valley', 4500, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp">₹4000</span>
+      </div>
+      <div class="card-body">
+        <h3>Rishikesh &amp; Ganges Valley</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'rishikesh-ganges', 'Rishikesh & Ganges Valley', 4000, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp">4790</span>
+      </div>
+      <div class="card-body">
+        <h3>Goa Coastal Circuit</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'goa-coastal', 'Goa Coastal Circuit', 4790, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp">₹5000</span>
+      </div>
+      <div class="card-body">
+        <h3>Udaipur &amp; Lake Palaces</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'udaipur-lakes', 'Udaipur & Lake Palaces', 5000, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1602416101147-fe2a3e9c6f78?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp">₹4790</span>
+      </div>
+      <div class="card-body">
+        <h3>Munnar &amp; Western Ghats</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'munnar-ghats', 'Munnar & Western Ghats', 4790, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80" alt="Placeholder destination photo" loading="lazy">
+        <span class="price-stamp">₹4000</span>
+      </div>
+      <div class="card-body">
+        <h3>Ladakh Plateau</h3>
+        <p>Placeholder description. Replace with your real itinerary highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>STAY: HOTEL</span><span>MEALS: ALL INCL.</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'ladakh-plateau', 'Ladakh Plateau', 4000, 'Domestic')">Select This Place</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="floating-total reveal" id="floatingTotal">
+    <span class="ft-label">Your Trip So Far</span>
+    <span class="ft-amount" id="ftAmount">₹0</span>
+    <a href="booking.html" class="btn btn-primary ft-btn">Review &amp; Book →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Safar<span class="mark">Shala</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul><li><a href="mailto:astromeda13@gmail.com">astromeda13@gmail.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 SafarShala. All routes walked in-house.</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/packages.js"></script>
+</body>
+</html>

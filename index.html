@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nostalgia Treks — Trekking &amp; Travel Across India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="international.html">International</a>
+      <a href="treks.html">Trekking Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="home-hero">
+  <div class="hero-img-wrap">
+    <img src="assets/hero-peak.png" alt="A traveller sits on a cliff edge facing a snow-capped Himalayan peak at golden hour" class="hero-img" id="heroImg">
+    <div class="hero-vignette"></div>
+    <div class="hero-grain"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="postcard-mark stamp">Est. for the wandering kind</span>
+    <h1 class="hero-title">
+      <span class="line">Some places</span>
+      <span class="line italic">stay with you</span>
+      <span class="line">long after you leave.</span>
+    </h1>
+    <p class="hero-sub">Curated treks and journeys across India — and beyond — with stay, meals, and the trail planned so all you have to do is show up.</p>
+    <div class="hero-actions">
+      <a href="booking.html" class="btn btn-primary">Plan My Trip →</a>
+      <a href="treks.html" class="btn btn-outline light">See Trekking Routes</a>
+    </div>
+  </div>
+
+  <a href="#intro" class="scroll-cue" aria-label="Scroll down">
+    <span class="scroll-line"></span> SCROLL
+  </a>
+</section>
+
+<!-- ============ INTRO STRIP ============ -->
+<section class="intro-strip section" id="intro">
+  <div class="reveal">
+    <span class="eyebrow">— WHY NOSTALGIA TREKS</span>
+    <h2>Travel planned the way your favourite memories are made.</h2>
+    <p class="intro-text">We've walked these trails ourselves. Every package bundles your stay, breakfast, lunch and dinner, and the route itself — across India's mountains, coasts and valleys, with international trips arranged on request.</p>
+  </div>
+
+  <div class="intro-features">
+    <div class="feature reveal reveal-delay-1">
+      <span class="feature-icon">🏔️</span>
+      <h3>Trekking, done properly</h3>
+      <p>Routes scouted and walked by our own guides, not licensed off a map.</p>
+    </div>
+    <div class="feature reveal reveal-delay-2">
+      <span class="feature-icon">🍲</span>
+      <h3>Stay &amp; meals included</h3>
+      <p>Hotel, breakfast, lunch and dinner — bundled into every package, no surprises.</p>
+    </div>
+    <div class="feature reveal reveal-delay-3">
+      <span class="feature-icon">🌍</span>
+      <h3>India first, world on request</h3>
+      <p>Our heart is in the Himalayas — but we'll arrange your trip anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED DESTINATIONS ============ -->
+<section class="section dark">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">— FEATURED ROUTES</span>
+      <h2>Where people keep going back to.</h2>
+    </div>
+
+    <div class="card-grid">
+      <article class="place-card reveal reveal-delay-1">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" alt="Himalayan valley trek" loading="lazy">
+          <span class="price-stamp">From ₹—</span>
+        </div>
+        <div class="card-body">
+          <h3>Himalayan High Trail</h3>
+          <p>Placeholder description — swap with your real route details and pricing.</p>
+          <div class="card-meta"><span>DAYS: —</span><span>GRADE: —</span></div>
+          <button class="select-btn" onclick="togglePlaceSelect(this, 'himalayan-high-trail', 'Himalayan High Trail', 0, 'Trek')">Select This Place</button>
+        </div>
+      </article>
+
+      <article class="place-card reveal reveal-delay-2">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Indian coastal destination" loading="lazy">
+          <span class="price-stamp">From ₹—</span>
+        </div>
+        <div class="card-body">
+          <h3>Coastal Escape</h3>
+          <p>Placeholder description — swap with your real route details and pricing.</p>
+          <div class="card-meta"><span>DAYS: —</span><span>GRADE: —</span></div>
+          <button class="select-btn" onclick="togglePlaceSelect(this, 'coastal-escape', 'Coastal Escape', 0, 'Leisure')">Select This Place</button>
+        </div>
+      </article>
+
+      <article class="place-card reveal reveal-delay-3">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=600&q=80" alt="Valley and meadow trek" loading="lazy">
+          <span class="price-stamp">From ₹—</span>
+        </div>
+        <div class="card-body">
+          <h3>Valley &amp; Meadow Circuit</h3>
+          <p>Placeholder description — swap with your real route details and pricing.</p>
+          <div class="card-meta"><span>DAYS: —</span><span>GRADE: —</span></div>
+          <button class="select-btn" onclick="togglePlaceSelect(this, 'valley-meadow-circuit', 'Valley & Meadow Circuit', 0, 'Trek')">Select This Place</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="see-all-wrap reveal">
+      <a href="domestic.html" class="btn btn-outline light">See All Domestic Packages →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE / NOSTALGIA STRIP ============ -->
+<section class="quote-strip">
+  <div class="quote-inner reveal">
+    <p>"You don't remember the hotel. You remember the cold air at 5am, the first glimpse of the peak, and the people you shared the climb with."</p>
+    <span class="stamp confirmed">— Nostalgia Treks</span>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="section cta-section">
+  <div class="cta-box reveal">
+    <h2>Ready to plan your trip?</h2>
+    <p>Pick your places, see your total instantly, and send us your request — we'll confirm by email and WhatsApp.</p>
+    <a href="booking.html" class="btn btn-primary">Start Booking →</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul>
+        <li><a href="mailto:astromeda13@gmail.com">astromeda13@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Nostalgia Treks. All routes walked in-house.</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

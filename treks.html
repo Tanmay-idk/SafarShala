@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trekking Routes — Nostalgia Treks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="international.html">International</a>
+      <a href="treks.html" class="active">Trekking Routes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Trekking Routes</span>
+    <h1>The trail is the whole point.</h1>
+    <p class="lede">Every route below is walked by our own guides, graded honestly, and bundled with stay and meals along the way.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">— ALL ROUTES</span>
+    <h2 style="font-size: clamp(26px, 3.6vw, 38px);">Placeholder routes — swap in your real treks, distances &amp; grades.</h2>
+  </div>
+
+  <div class="card-grid">
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹4500</span>
+      </div>
+      <div class="card-body">
+        <h3>Hampta Pass</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: MODERATE</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'hampta-pass', 'Hampta Pass', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹5000</span>
+      </div>
+      <div class="card-body">
+        <h3>Kedarkantha</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: EASY-MODERATE</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'kedarkantha', 'Kedarkantha', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹4500</span>
+      </div>
+      <div class="card-body">
+        <h3>Stok Kangri Base</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: STRENUOUS</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'stok-kangri', 'Stok Kangri Base', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹4789</span>
+      </div>
+      <div class="card-body">
+        <h3>Valley of Flowers</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: EASY</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'valley-of-flowers', 'Valley of Flowers', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1602416101147-fe2a3e9c6f78?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹5600</span>
+      </div>
+      <div class="card-body">
+        <h3>Roopkund</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: STRENUOUS</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'roopkund', 'Roopkund', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+
+    <article class="place-card reveal">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=600&q=80" alt="Placeholder trek photo" loading="lazy">
+        <span class="price-stamp">₹4678</span>
+      </div>
+      <div class="card-body">
+        <h3>Brahmatal</h3>
+        <p>Placeholder description. Replace with your real route notes — terrain, altitude gain, highlights.</p>
+        <div class="card-meta"><span>DAYS: —</span><span>ALT: — m</span><span>GRADE: MODERATE</span></div>
+        <button class="select-btn" onclick="togglePlaceSelect(this, 'brahmatal', 'Brahmatal', 0, 'Trek')">Select This Place</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="floating-total" id="floatingTotal">
+    <span class="ft-label">Your Trip So Far</span>
+    <span class="ft-amount" id="ftAmount">₹0</span>
+    <a href="booking.html" class="btn btn-primary ft-btn">Review &amp; Book →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul><li><a href="mailto:astromeda13@gmail.com">astromeda13@gmail.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Nostalgia Treks. All routes walked in-house.</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/packages.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* ==========================================================================
+   BOOKING PAGE — multi-step flow styling
+   ========================================================================== */
+
+.booking-section {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  max-width: 760px;
+}
+
+.booking-step.hidden { display: none; }
+
+.step-card {
+  background: var(--paper-dim);
+  border: 1px solid rgba(28,26,22,0.08);
+  border-radius: 8px;
+  padding: 44px;
+}
+
+.step-card h2 {
+  font-size: clamp(24px, 3.4vw, 32px);
+  margin: 16px 0 12px;
+}
+
+.step-note {
+  color: var(--mist);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.step-note a { color: var(--amber-deep); text-decoration: underline; }
+
+/* ---------- Login form ---------- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+}
+
+.login-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.login-form input,
+.details-form input,
+.details-form textarea {
+  padding: 13px 16px;
+  border: 1.5px solid rgba(28,26,22,0.18);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  background: var(--paper);
+  color: var(--ink);
+  width: 100%;
+}
+
+.login-form input:focus,
+.details-form input:focus,
+.details-form textarea:focus {
+  border-color: var(--amber);
+  outline: none;
+}
+
+.login-form button { margin-top: 8px; }
+
+/* ---------- Cart review ---------- */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  background: var(--paper);
+  border-radius: 5px;
+  border: 1px solid rgba(28,26,22,0.08);
+}
+
+.cart-row-info h4 { font-size: 16px; margin-bottom: 3px; }
+.cart-row-info span {
+  font-family: var(--font-stamp);
+  font-size: 11px;
+  color: var(--mist);
+  text-transform: uppercase;
+}
+
+.cart-row-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-row-price {
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.cart-row-remove {
+  background: none;
+  border: none;
+  color: var(--stamp-red);
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--mist);
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-top: 2px solid rgba(28,26,22,0.12);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.cart-total-amount {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--amber-deep);
+}
+
+.step-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Details form ---------- */
+.details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.details-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label { font-size: 13px; font-weight: 600; }
+
+.submit-btn { align-self: flex-start; margin-top: 6px; }
+
+/* ---------- Done step ---------- */
+.done-card { text-align: center; }
+.done-card .stamp { margin: 0 auto 18px; }
+.done-card .btn { margin-top: 10px; }
+
+@media (max-width: 600px) {
+  .step-card { padding: 28px 22px; }
+  .details-form .form-row { grid-template-columns: 1fr; }
+  .cart-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .cart-row-right { width: 100%; justify-content: space-between; }
+}
