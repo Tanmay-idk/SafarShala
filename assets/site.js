@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NOSTALGIA TREKS — Shared site behaviour
+   Safar Shala — Shared site behaviour
    Loaded on every page. Handles: nav toggle, scroll reveals, login state,
    and the booking "cart" (selected places + running total).
 
@@ -142,7 +142,7 @@ function buildBookingEmail() {
 
   const lines = cart.map(p => `- ${p.name} (${p.type}) — ₹${Number(p.price).toLocaleString('en-IN')}`).join('\n');
 
-  const subject = encodeURIComponent('New Trip Booking Request — Nostalgia Treks');
+  const subject = encodeURIComponent('New Trip Booking Request — Safar Shala');
   const body = encodeURIComponent(
 `New booking request from the website.
 
