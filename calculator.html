@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Calculator — Nostalgia Treks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/calculator.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="domestic.html">Domestic</a>
+      <a href="international.html">International</a>
+      <a href="treks.html">Trekking Routes</a>
+      <a href="calculator.html" class="active">Price Calculator</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book a Trip <span data-cart-badge class="cart-badge"></span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Price Calculator</span>
+    <h1>See your total before you commit to anything.</h1>
+    <p class="lede">Pick a destination, tell us how many people and (for stays) how many nights — your estimated total updates instantly.</p>
+  </div>
+</section>
+
+<section class="section calc-section">
+  <div class="calc-card reveal">
+
+    <div class="field">
+      <label for="destinationSelect">Choose a destination</label>
+      <select id="destinationSelect" onchange="handleDestinationChange()">
+        <option value="" disabled selected>Select a destination...</option>
+        <optgroup label="Trekking Routes (flat price per person)">
+          <!-- Populated from data in calculator.js — edit prices there -->
+        </optgroup>
+        <optgroup label="Domestic Packages (priced per night)">
+        </optgroup>
+        <optgroup label="International Packages (priced per night)">
+        </optgroup>
+      </select>
+    </div>
+
+    <div id="destinationDetails" class="destination-details hidden">
+      <div class="detail-row">
+        <span class="detail-label" id="pricingModelLabel">—</span>
+        <span class="stamp" id="gradeStamp"></span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="peopleInput">Number of people</label>
+      <input type="number" id="peopleInput" min="1" value="1" oninput="recalculate()">
+    </div>
+
+    <!-- Only shown for per-night destinations -->
+    <div class="field hidden" id="datesField">
+      <label>Travel dates</label>
+      <div class="date-row">
+        <div>
+          <span class="date-sublabel">Check-in</span>
+          <input type="date" id="checkinInput" oninput="recalculate()">
+        </div>
+        <div>
+          <span class="date-sublabel">Check-out</span>
+          <input type="date" id="checkoutInput" oninput="recalculate()">
+        </div>
+      </div>
+      <p class="nights-readout" id="nightsReadout"></p>
+    </div>
+
+    <div class="calc-breakdown" id="calcBreakdown">
+      <p class="placeholder-text">Choose a destination above to see your price breakdown.</p>
+    </div>
+
+    <div class="calc-total-row" id="calcTotalRow">
+      <span>Estimated Total</span>
+      <span class="calc-total-amount" id="calcTotalAmount">₹0</span>
+    </div>
+
+    <button class="btn btn-primary calc-add-btn" id="addToTripBtn" onclick="addCalculatedTripToCart()" disabled>
+      Add This to My Trip →
+    </button>
+    <p class="calc-note">This adds your selection to the same trip cart used on the Booking page — nothing is sent to us yet.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nostalgia<span class="mark">Treks</span></a>
+      <p style="margin-top: 14px; font-size: 14px; max-width: 280px;">Trekking and travel across India, with international trips arranged on request.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="domestic.html">Domestic Packages</a></li>
+        <li><a href="international.html">International Packages</a></li>
+        <li><a href="treks.html">Trekking Routes</a></li>
+        <li><a href="calculator.html">Price Calculator</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <ul><li><a href="mailto:astromeda13@gmail.com">astromeda13@gmail.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Nostalgia Treks. All routes walked in-house.</span></div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/calculator.js"></script>
+</body>
+</html>
